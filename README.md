@@ -1,5 +1,5 @@
 # I'm not the official maintainer of the VG-Ripper...
-...only a fan of this small piece of software :-)
+...only a fan of this small piece of software :smiley:
 
 ## My contributions so far
 - new Image Hosts
