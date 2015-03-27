@@ -5,7 +5,7 @@
 - new Image Hosts
  
 ## My suggestions
-- replace RegEx-Parser with a html-parser like HtmlAgility (http://htmlagilitypack.codeplex.com/) or ScrapySharp (https://bitbucket.org/rflechner/scrapysharp/wiki/Home)
+- replace RegEx-Parser with a html-parser like HtmlAgility (http://htmlagilitypack.codeplex.com/) or ScrapySharp (https://bitbucket.org/rflechner/scrapysharp/wiki/Home), but this would be a major refactoring...
 - testcases for the Core- and Services-projects
 - Implement logging i.e Nlog
 - Gui improvements like hints that ImageHost is not implemented or that an image couldn't be loaded, ...
