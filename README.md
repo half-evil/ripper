@@ -1,3 +1,16 @@
+# I'm not the official maintainer of the VG-Ripper...
+...only a fan of this small piece of software :smiley:
+
+## My contributions so far
+- new Image Hosts
+ 
+## My suggestions
+- replace RegEx-Parser with a html-parser like HtmlAgility (http://htmlagilitypack.codeplex.com/) or ScrapySharp (https://bitbucket.org/rflechner/scrapysharp/wiki/Home), but this would be a major refactoring...
+- testcases for the Core- and Services-projects
+- Implement logging i.e Nlog
+- Gui improvements like hints that ImageHost is not implemented or that an image couldn't be loaded, ...
+- fix some Mono problems: no image in the last downloaded picturebox, no controls after minimizing, random crashes
+
 # ripper
 VG-Ripper is a Utility that Downloads (Rips) all Images posted on the ViperGirls Forums, and PG-Ripper on all VB (vBulletin) Forums.
 
