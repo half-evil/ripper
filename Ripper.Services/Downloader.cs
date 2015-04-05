@@ -875,7 +875,7 @@ namespace Ripper.Services
             {
                 threadStart = imageDownloader.GetImgTrex;
             }
-            else if (imageUrl.IndexOf(@"gallerynova.se/", System.StringComparison.Ordinal) >= 0)
+            else if (imageUrl.IndexOf(@"gallerynova.se/", System.StringComparison.Ordinal) >= 0 || imageUrl.IndexOf(@"gallerysense.se/", System.StringComparison.Ordinal) >= 0)
             {
                 threadStart = imageDownloader.GetGallerynova;
             }
