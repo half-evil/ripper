@@ -2,7 +2,8 @@
 ...only a fan of this small piece of software :smiley:
 
 ## My contributions so far
-- new Image Hosts
+- new Image Hosts: imgTrex.com, gallerynova.se, leechimg.com, imgdrive.co, imgmaid.net, imgtiger.org, imgwel.com and pic-maniac.com
+- saving the jobqueue to a xml-file after adding a new job, for resuming the jobs later or as a backup in case of a crash
  
 ## My suggestions
 - replace RegEx-Parser with a html-parser like HtmlAgility (http://htmlagilitypack.codeplex.com/) or ScrapySharp (https://bitbucket.org/rflechner/scrapysharp/wiki/Home), but this would be a major refactoring...
