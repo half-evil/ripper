@@ -879,6 +879,10 @@ namespace Ripper.Services
             {
                 threadStart = imageDownloader.GetGallerynova;
             }
+            else if (imageUrl.IndexOf(@"leechimg.com/", System.StringComparison.Ordinal) >= 0)
+            {
+                threadStart = imageDownloader.GetLeechimg;
+            }
             else if (thumbImageUrl.Contains("_thumb."))
             {
                 threadStart = imageDownloader.GetImgBanana;

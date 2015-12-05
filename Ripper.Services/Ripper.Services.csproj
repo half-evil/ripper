@@ -158,6 +158,7 @@
     <Compile Include="ImageHosts\PicDir.cs" />
     <Compile Include="ImageHosts\PicEasy.cs" />
     <Compile Include="ImageHosts\ImgTrex.cs" />
+    <Compile Include="ImageHosts\Leechimg.cs" />
     <Compile Include="ImageHosts\PicExposed.cs" />
     <Compile Include="ImageHosts\PicHoarder.cs" />
     <Compile Include="ImageHosts\PicJackal.cs" />
