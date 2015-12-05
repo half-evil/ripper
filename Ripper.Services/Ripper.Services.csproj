@@ -24,13 +24,14 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
-    <DebugType>none</DebugType>
+    <DebugType>full</DebugType>
     <Optimize>true</Optimize>
     <OutputPath>bin\Release\</OutputPath>
-    <DefineConstants>TRACE</DefineConstants>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
     <ErrorReport>prompt</ErrorReport>
     <WarningLevel>4</WarningLevel>
     <Prefer32Bit>false</Prefer32Bit>
+    <DebugSymbols>true</DebugSymbols>
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
@@ -80,6 +81,7 @@
     <Compile Include="ImageHosts\HotLinkImage.cs" />
     <Compile Include="ImageHosts\Imaaage.cs" />
     <Compile Include="ImageHosts\Image2Share.cs" />
+    <Compile Include="ImageHosts\ImgDriveCo.cs" />
     <Compile Include="ImageHosts\ImageBam.cs" />
     <Compile Include="ImageHosts\ImageBeaver.cs" />
     <Compile Include="ImageHosts\ImageBugs.cs" />
