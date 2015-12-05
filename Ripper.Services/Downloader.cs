@@ -883,6 +883,14 @@ namespace Ripper.Services
             {
                 threadStart = imageDownloader.GetLeechimg;
             }
+            else if (imageUrl.IndexOf(@"imgdrive.co/", System.StringComparison.Ordinal) >= 0  
+                || imageUrl.IndexOf(@"imgmaid.net/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"imgtiger.org/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"imgwel.com/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"pic-maniac.com/", System.StringComparison.Ordinal) >= 0)
+            {
+                threadStart = imageDownloader.GetImgDriveCo;
+            }
             else if (thumbImageUrl.Contains("_thumb."))
             {
                 threadStart = imageDownloader.GetImgBanana;
