@@ -72,7 +72,7 @@ namespace Ripper.Services
             {
                 threadStart = imageDownloader.GetImageVenue;
             }
-            else if (imageUrl.Contains(@"imagevenue.com/img.php?"))
+            else if (imageUrl.Contains(@"imagevenue.com"))
             {
                 threadStart = imageDownloader.GetImageVenueNew;
             }
@@ -675,7 +675,7 @@ namespace Ripper.Services
             }
             else if (imageUrl.IndexOf(@"img.yt/", System.StringComparison.Ordinal) >= 0)
             {
-                threadStart = imageDownloader.GetImgWoot;
+                threadStart = imageDownloader.GetImgYt;
             }
             else if (imageUrl.IndexOf(@"imgcandy.net/", System.StringComparison.Ordinal) >= 0)
             {
@@ -883,7 +883,12 @@ namespace Ripper.Services
             {
                 threadStart = imageDownloader.GetLeechimg;
             }
-            else if (imageUrl.IndexOf(@"imgdrive.co/", System.StringComparison.Ordinal) >= 0  
+            else if (imageUrl.IndexOf(@"imgdrive.co/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"imzdrop.com/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"coreimg.net/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"imzdrop.com/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"chronos.to/", System.StringComparison.Ordinal) >= 0
+                || imageUrl.IndexOf(@"myimg.club/", System.StringComparison.Ordinal) >= 0
                 || imageUrl.IndexOf(@"imgmaid.net/", System.StringComparison.Ordinal) >= 0
                 || imageUrl.IndexOf(@"imgtiger.org/", System.StringComparison.Ordinal) >= 0
                 || imageUrl.IndexOf(@"imgwel.com/", System.StringComparison.Ordinal) >= 0

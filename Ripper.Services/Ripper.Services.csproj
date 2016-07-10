@@ -81,6 +81,7 @@
     <Compile Include="ImageHosts\HotLinkImage.cs" />
     <Compile Include="ImageHosts\Imaaage.cs" />
     <Compile Include="ImageHosts\Image2Share.cs" />
+    <Compile Include="ImageHosts\Imgyt.cs" />
     <Compile Include="ImageHosts\ImgDriveCo.cs" />
     <Compile Include="ImageHosts\ImageBam.cs" />
     <Compile Include="ImageHosts\ImageBeaver.cs" />
