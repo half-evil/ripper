@@ -140,7 +140,7 @@ namespace Ripper.Services
                 ref this.imageName,
                 ref this.imageNumber,
                 ref this.eventTable);
-            this.xService.StartDownload();
+            this.xService.StartDownloadAsync();
         }
 
         /// <summary>
@@ -155,7 +155,7 @@ namespace Ripper.Services
                 ref this.imageName,
                 ref this.imageNumber,
                 ref this.eventTable);
-            this.xService.StartDownload();
+            this.xService.StartDownloadAsync();
         }
 
         /// <summary>
@@ -2265,6 +2265,18 @@ namespace Ripper.Services
         public void GetPicExposed()
         {
             this.xService = new PicExposed(
+                ref this.savePath,
+                ref this.imageURL,
+                ref this.thumbImageURL,
+                ref this.imageName,
+                ref this.imageNumber,
+                ref this.eventTable);
+            this.xService.StartDownloadAsync();
+        }
+
+        public void GetImgYt()
+        {
+            this.xService = new ImgYt(
                 ref this.savePath,
                 ref this.imageURL,
                 ref this.thumbImageURL,
