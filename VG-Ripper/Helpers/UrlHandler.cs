@@ -76,16 +76,27 @@ namespace Ripper
                     {
                         xmlUrl = inputUrl;
 
+                        // VG switched to https:// around july 2016
                         // Make sure url starts with http://
-                        if (xmlUrl.IndexOf("http://") != 0)
+                        /*if (xmlUrl.IndexOf("http://") != 0)
                         {
                             return string.Empty;
-                        }
-                        
+                        }*/
+
                         /*Old VB Forums 3.x
                         sXmlUrl = sXmlUrl.Replace("showthread.php?t=", "getSTDpost-imgXML.php?dpver=2&threadid=");
                         sXmlUrl = sXmlUrl.Replace("showthread.php?goto=newpost&t=", "getSTDpost-imgXML.php?dpver=2&threadid=");
                         sXmlUrl = sXmlUrl.Replace("showthread.php?p=", "getSTDpost-imgXML.php?dpver=2&postid=");*/
+
+                        // pretty url format of vBulletin 5.x
+                        // link from search/overview http://vipergirls.to/threads/0123456-Thread-Title
+                        // link from paginator https://vipergirls.to/threads/0123456-Thread-Title/page2 -> not supported, loads the whole thread
+                        // link to single post https://vipergirls.to/threads/0123456-Thread-Title?p=123456&viewfull=1#post123456
+                        if (xmlUrl.Contains("/threads/"))
+                        {
+                            // it's enough to replace it to the old format
+                            xmlUrl = xmlUrl.Replace("?", "&").Replace("threads/", "showthread.php?");
+                        }
 
                         // Old VB Forums 3.x
                         if (xmlUrl.Contains("showthread.php?t="))
@@ -99,7 +110,7 @@ namespace Ripper
                             xmlUrl = xmlUrl.Replace("showpost.php?p=", "getSTDpost-imgXML.php?dpver=2&postid=");
                         }
                         else if (!xmlUrl.Contains("#post") && xmlUrl.Contains("showthread.php?"))
-                        { 
+                        {
                             // New VB Forums 4.x
                             // http://vipergirls.to/showthread.php?0123456-Thread-Title
                             // Threads
